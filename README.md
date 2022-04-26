@@ -1,5 +1,5 @@
 # MusicPlayer
-A Music Player App. Built with Python
+A Music Player App, built with Python
 
 Music player is complete with play/pause functionality, skip, and previous track.
 *A song list is located on the top left of the UI.
