@@ -1,9 +1,8 @@
 # MusicPlayer
 A Music Player App, built with Python (Tkinter, Pygame)
 
-Music player is complete with play/pause functionality, skip, and previous track.
-* A song list is located on the top left of the UI.
-* Volume controls are on the lower left of the UI.
+Music player is complete with play/pause functionality, skip, go to previous track,
+<br>volume controls and a song list
 
 ### Module Requirements
 1. Tkinter
