@@ -161,7 +161,7 @@ mainWindow.resizable(False, False)
 
 #Canvas
 canvas = Canvas(mainWindow, width=windowWidth, height=windowHeight);
-bg = PhotoImage(file = "D:\\Microsoft VS Code\\Code\\MusicPlayerApp\\Assets\\background.png")
+bg = PhotoImage(file = "D:\\Microsoft VS Code\\Code\\MusicPlayer\\Assets\\background.png")
 canvas.create_image(0,0,image=bg)
 songTitle = canvas.create_text(400,5, text="No Song Playing...", font=("tahoma",20),anchor="n")
 playPauseLabel = canvas.create_text(400,450, text="▶", font=("tahoma",20),anchor="n",tags="playPauseLabel")
