@@ -163,7 +163,7 @@ mainWindow.resizable(False, False)
 canvas = Canvas(mainWindow, width=windowWidth, height=windowHeight);
 bg = PhotoImage(file = "D:\\Microsoft VS Code\\Code\\MusicPlayer\\Assets\\background.png")
 canvas.create_image(0,0,image=bg)
-songTitle = canvas.create_text(400,5, text="No Song Playing...", font=("tahoma",20),anchor="n")
+songTitle = canvas.create_text(400,5, text="No Song Playing...", font=("tahoma",16),anchor="n")
 playPauseLabel = canvas.create_text(400,450, text="▶", font=("tahoma",20),anchor="n",tags="playPauseLabel")
 forwardLabel = canvas.create_text(700,450, text="⏭️", font=("tahoma",20),anchor="e",tags="forwardLabel")
 previousLabel = canvas.create_text(100,450,text="⏮️", font=("tahoma",20),anchor="w",tags="previousLabel")
@@ -193,7 +193,7 @@ volumeSlider.set(pygame.mixer.music.get_volume() * 100);
 
 #Songs List
 songs = TheAudioPlayer.getAllSongs();
-songListBox = Listbox(mainWindow,font="tahoma", bg="white",highlightcolor="white",selectbackground="tomato", bd=2,width=25)
+songListBox = Listbox(mainWindow,font="tahoma", bg="white",highlightcolor="white",selectbackground="tomato", bd=2,width=35)
 
 #Favicon
 mainWindow.iconphoto(False, tkinter.PhotoImage(file=currDir + r"\Assets\favicon.png"))
@@ -210,7 +210,7 @@ canvas.pack(fill="both", expand=True)
 
 
 #UI Positioning
-songListBox.place(relx=0.98, rely=0.2, anchor=E)
+songListBox.place(relx=0.98, rely=0.25, anchor=E)
 volumeSlider.place(relx=0.98, rely=0.6, anchor=E);
 
 
