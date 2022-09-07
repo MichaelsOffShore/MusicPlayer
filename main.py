@@ -1,4 +1,4 @@
-import tkinter
+import tkinter as tkinter
 from tkinter import *
 import pygame
 import os
@@ -9,7 +9,6 @@ class audioPlayer():
     currentSongIndex = 0;
     currentSongName = ""
     allSongs = []
-    supportedAudioExtensions = [".wav", ".mp3",".ogg"];
     musicIsPaused = True;
     audioInit = False;
     
@@ -22,7 +21,8 @@ class audioPlayer():
                 listOfFiles.append(os.path.join(root, file))
         for name in listOfFiles:
             file = name[name.rfind("\\") + 1:]
-            self.allSongs.append(audioPath + file)
+            if self.isValidExtension(file[len(file)-4:]):
+                self.allSongs.append(audioPath + file)
         if not self.allSongs:
             print("No songs in the folder...")
             sys.exit()
@@ -33,7 +33,7 @@ class audioPlayer():
         pygame.mixer.init()
         pygame.mixer.music.load(initAudioFile)
         pygame.mixer.music.set_volume(0.5)
-        self.currentSongName = initAudioFile;
+        self.currentSongName = initAudioFile
 
  
     def playPauseAudio(self):
@@ -126,6 +126,11 @@ class audioPlayer():
     def playSongAtIndex(self):
         pass;
 
+    def isValidExtension(self, extension):
+        if extension == ".wav" or extension == ".ogg" or extension == ".mp3":
+            return True;
+        else:
+            return False;
 
 #End of Audio Player Class
 
