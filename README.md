@@ -1,14 +1,40 @@
 # MusicPlayer
-A Music Player App, built with Python (Tkinter, Pygame)
 
-Music player is complete with play/pause functionality, skip, go to previous track,
-<br>volume controls and a song list<br>
-### **Note:** Place audio files into the "Audio" folder<br>
-Supported file formats include (.mp3.wav.ogg)<br>
+**MusicPlayer** is my first Python project — a simple music player app built with Python using **Tkinter** and **Pygame**.
+
+---
+
+### Features
+- User-friendly UI with play/pause functionality  
+- Skip to next track and go to previous track controls  
+- Volume control slider  
+- Song list display  
+
+---
+
+### Usage
+- Place your audio files inside the `Audio` folder  
+- Supported file formats: `.mp3`, `.wav`, `.ogg`  
+
+---
+
 ### Module Requirements
-1. Tkinter
-2. Pygame
-<br>
+
+The main Python packages needed are:
+
+- `pygame`
+- `tkinter` (usually comes pre-installed with Python)
+
+You can install the packages using pip:
+
+```bash
+pip install -r requirements.txt
+
+```
+You run the app with:
 
 
-Run **main.py** to start the app
+```bash
+python main.py
+```
+Or you can run the `MusicPlayer.exe`
